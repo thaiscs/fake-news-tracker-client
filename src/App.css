@@ -1,35 +1,51 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-page,
+body {
+  height: 800px;
+  background-image: url("https://media-private.canva.com/KX3K8/MADwzRKX3K8/1/s2.jpg?response-expires=Mon%2C%2013%20Jan%202020%2016%3A58%3A03%20GMT&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200113T141957Z&X-Amz-SignedHeaders=host&X-Amz-Expires=9485&X-Amz-Credential=AKIAJJATJK7JCUD446NA%2F20200113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=01286da0466a083b3411aecfa2fb5288d7d9554a4b0254235d28761baca0463b");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.form {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiFormControl-root {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
+.MuiOutlinedInput-input {
+  padding: 40.5px 14px;
+}
+
+.MuiInputBase-input {
+  background: red;
+}
+.MuiButton-root {
+  border: 4px solid rgba(1, 1, 1, 0.23);
+  padding: 5px 10px;
+  background: lightgray;
+}
+
+#fake-news-logo {
+  padding-top: 300px;
+}
+
+@keyframes fake-news-logo {
   from {
     transform: rotate(0deg);
   }

@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
+import newArticleReducer from "./components/articles/reducer";
 
 export default combineReducers({
-  //   loggedIn: loginReducer,
-  //   events: eventsListReducer,
+  score: newArticleReducer
 });

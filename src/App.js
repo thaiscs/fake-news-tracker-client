@@ -1,15 +1,14 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import TextForm from "./components/articles/TextForm";
+import { Route } from "react-router-dom";
+import ScorePage from "./components/score/ScorePage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <TextForm />
-      </header>
+      <Route exact path="/" component={TextForm} />
+      <Route exact path="/score" component={ScorePage} />
     </div>
   );
 }

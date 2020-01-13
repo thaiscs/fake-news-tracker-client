@@ -1,7 +1,7 @@
 import request from "superagent";
 const url = "http://localhost:4000";
 
-export function postNewArticle(article) {
+export function checkNewArticle(article) {
   return {
     type: "NEW_ARTICLE",
     payload: {
@@ -19,8 +19,8 @@ export function submitNewArticle(text) {
       })
       .then(response => {
         console.log("response?", response);
-
-        dispatch(postNewArticle(response));
+        const newArticle = JSON.parse(response.text);
+        dispatch(checkNewArticle(newArticle));
       })
       .catch(err => console.log("err", err));
   };
