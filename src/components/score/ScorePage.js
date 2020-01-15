@@ -17,8 +17,7 @@ class ScorePage extends Component {
         {score ? (
           <div
             className="score-page-background"
-            // style={{ backgroundImage: "url(" + image + ")" }}
-            style={{ backgroundColor: "#E9E9E9" }}
+            // style={{ backgroundColor: "#E9E9E9" }}
           >
             <img
               className="score-page-image"
@@ -34,6 +33,7 @@ class ScorePage extends Component {
             />
             <main className="score-details">
               <h1
+                className="bullshit-score-gradient"
                 style={{
                   color: "black",
                   paddingTop: "70px",
@@ -41,9 +41,16 @@ class ScorePage extends Component {
                 }}
               >
                 {" "}
-                The Bullshit score{" "}
+                Bullshit Score{" "}
               </h1>
-              <h1 style={{ display: "block", paddingRight: "330px" }}>
+              <h1
+                style={{
+                  display: "block",
+                  paddingRight: "0px",
+                  fontSize: "3em",
+                  fontFamily: "monospace"
+                }}
+              >
                 {score.article.bullshitScore}%
               </h1>
               <h3
@@ -55,7 +62,7 @@ class ScorePage extends Component {
             </main>
             <h3>{score.article.emotion}</h3>
             <div className="what-to-check-for">
-              <p style={{ fontStyle: "italic" }}>EXTRA</p>
+              <p style={{ fontStyle: "italic" }}>EXTRA </p>
               <ul>
                 <p>
                   <span>&#10003;</span> FACTS: A trustworthy article is based on

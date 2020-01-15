@@ -3,8 +3,8 @@ import { connect } from "react-redux";
 import { submitNewArticle } from "./actions";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import image from "../../../src/fake-news-road.jpg";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import VideoTag from "./VideoTag";
 
 class TextForm extends Component {
   state = {
@@ -29,33 +29,38 @@ class TextForm extends Component {
       overrides: {
         MuiButton: {
           root: {
-            background: "yellowgreen",
+            background: "white",
             display: "flex",
             flexDirection: "column",
             marginTop: "8px",
-            alignItems: "center"
+            alignItems: "center",
+            transition:
+              "background-color 250ms cubic-bezier(255, 255, 255, 1) 0ms;"
           }
         },
         MuiInputBase: {
           root: {
-            background: "ghostwhite",
-            padding: "20.5px 17px"
+            background: "rgba(255, 255, 255, 0.95)"
+          }
+        },
+        MuiOutlinedInput: {
+          multiline: {
+            // padding: "18.5px 250px",
+            borderRadius: "10px"
           }
         }
       }
     });
     return (
-      <div
-        className="main-page"
-        style={{
-          backgroundImage: "url(" + image + ")"
-        }}
-      >
-        <form className="form" onSubmit={this.handleSubmit}>
-          {/* <h2 style={{ color: "red" }}>FAKE ?</h2> */}
+      <div className="main-page">
+        <VideoTag />
+        <div className="form">
           <ThemeProvider theme={theme}>
             <TextField
-              id="textfield"
+              id="outlined-multiline-flexible"
+              multiline
+              rows="5"
+              fullWidth={true}
               variant="outlined"
               type="text"
               name="article"
@@ -67,7 +72,7 @@ class TextForm extends Component {
               Check
             </Button>
           </ThemeProvider>
-        </form>
+        </div>
       </div>
     );
   }
