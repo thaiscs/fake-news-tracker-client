@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import image from "../../../src/news.png";
+import MdBulb from "react-ionicons/lib/MdBulb";
 
 class ScorePage extends Component {
   render() {
@@ -17,11 +17,11 @@ class ScorePage extends Component {
         {score ? (
           <div
             className="score-page-background"
-            // style={{ backgroundColor: "#E9E9E9" }}
+            style={{ backgroundColor: "black" }}
           >
-            <img
-              className="score-page-image"
-              src={image}
+            {/* <img
+              className="idea-icon"
+              src="https://cdn.dribbble.com/users/42577/screenshots/1470973/lightbulb.gif"
               width="370"
               height="122"
               style={{
@@ -29,56 +29,44 @@ class ScorePage extends Component {
                 transform: "rotateZ(-25deg)",
                 paddingTop: "55px"
               }}
-              alt="fake-news"
-            />
-            <main className="score-details">
-              <h1
-                className="bullshit-score-gradient"
-                style={{
-                  color: "black",
-                  paddingTop: "70px",
-                  paddingRight: "330px"
-                }}
-              >
-                {" "}
-                Bullshit Score{" "}
-              </h1>
-              <h1
-                style={{
-                  display: "block",
-                  paddingRight: "0px",
-                  fontSize: "3em",
-                  fontFamily: "monospace"
-                }}
-              >
-                {score.article.bullshitScore}%
-              </h1>
-              <h3
-                className="score-range-color"
-                style={{ backgroundColor: score.article.color }}
-              >
-                {score.article.range}
-              </h3>
-            </main>
-            <h3>{score.article.emotion}</h3>
-            <div className="what-to-check-for">
-              <p style={{ fontStyle: "italic" }}>EXTRA </p>
-              <ul>
-                <p>
-                  <span>&#10003;</span> FACTS: A trustworthy article is based on
-                  a collection of facts and a logical progression of thought.
-                </p>
-                <p>
-                  <span>&#10003;</span> SOURCES: Should include information such
-                  as author name(s), publication, institution, title, page, and
-                  web link if applicable.{" "}
-                </p>
-                <p>
-                  <span>&#10003;</span> BIAS: Reliable journalism should include
-                  at least two points of view or sides of the story.{" "}
-                </p>
-              </ul>
-            </div>
+              alt="idea-icon"
+            /> */}
+            <h1
+              className="bullshit-score-gradient"
+              style={{
+                paddingTop: "70px"
+              }}
+            >
+              {" "}
+              Bullshit Score{" "}
+            </h1>
+            <h1
+              style={{
+                color: "white",
+                display: "block",
+                paddingRight: "0px",
+                fontSize: "3em",
+                fontFamily: "monospace"
+              }}
+            >
+              {score.article.bullshitScore}%
+            </h1>
+            <h3
+              className="score-range-color"
+              style={{ backgroundColor: score.article.color }}
+            >
+              {score.article.range}
+            </h3>
+            <h3 style={{ color: "ghostwhite", fontStyle: "italic" }}>
+              {score.article.emotion}
+            </h3>
+            {/* <span className="hand-emoji" role="img" aria-label="hand">
+              👉
+            </span> */}
+
+            <MdBulb shake={true} fontSize="60px" color="orange" />
+            <h4 style={{ color: "#FF8C00" }}>{score.article.tipTitle}</h4>
+            <h4 style={{ color: "#FF8C00" }}>{score.article.tipContent}</h4>
           </div>
         ) : (
           <p>{spinner}</p>

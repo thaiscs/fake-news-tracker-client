@@ -5,17 +5,12 @@
 
 .main-page {
   background-size: 100% 100%;
-  /* background-size: contain; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
   height: auto;
   width: 100%;
-  /* max-width: 848px; */
-  /* padding-top: 66, 64%; */
 }
 
 .form {
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,15 +22,17 @@
 }
 
 .score-page-background {
-  height: 550px;
+  height: auto;
   background-size: 100%;
+  padding-bottom: 5px;
   background-size: contain;
-  background-color: "#E9E9E9";
   background-repeat: no-repeat;
   background-position: center;
+  color: "white";
 }
 
 .bullshit-score-gradient {
+  /* padding-top: 30px; */
   font-size: 72px;
   background: linear-gradient(to right, green, yellow, red, gray);
   -webkit-background-clip: text;

@@ -27,15 +27,26 @@ class TextForm extends Component {
   render() {
     const theme = createMuiTheme({
       overrides: {
+        MuiCssBaseline: {
+          // Name of the rule
+          "@global": {
+            "*, *::before, *::after": {
+              transition: "none !important",
+              animation: "none !important"
+            }
+          }
+        },
         MuiButton: {
           root: {
             background: "white",
             display: "flex",
             flexDirection: "column",
             marginTop: "8px",
-            alignItems: "center",
-            transition:
-              "background-color 250ms cubic-bezier(255, 255, 255, 1) 0ms;"
+            alignItems: "center"
+          },
+          transitions: {
+            // So we have `transition: none;` everywhere
+            create: () => "none"
           }
         },
         MuiInputBase: {
