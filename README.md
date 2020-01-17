@@ -23,8 +23,9 @@ After careful consideration of the best practices and principles of trustworthy 
 
 1. Copy and paste article's plain text into the input field on main page and click on "check":
         
-        https://fervent-carson-5438ca.netlify.com/
-        
+      LINK TO HOMEPAGE  https://fervent-carson-5438ca.netlify.com/
+
+
 2. After the backend calculations are done you'll be redirected to the score page where the following information will be rendered:
 
         // PRINTSCREEN SCORE PAGE
