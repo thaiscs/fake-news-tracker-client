@@ -13,7 +13,7 @@ export function checkNewArticle(article) {
 export function submitNewArticle(text) {
   return function thunk(dispatch, getState) {
     request
-      .post(`${url}/articles`)
+      .post(`${url}/calculateScore`)
       .send({
         text: text
       })
