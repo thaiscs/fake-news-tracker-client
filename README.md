@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fake News - Bullshit Detector App
 
-## Available Scripts
+# Project Intro
 
-In the project directory, you can run:
+Fake News became a big problem over the past few years when it took massive proportions all over the world, resulting in an increase of MISINFORTATION among society.
 
-### `npm start`
+In a world where information is such a valuable asset, I invite the user to re-evaluate the way they consume their news by taking a more skeptical approach.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Tech stack
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Google Natural Language API: to analyze sentiment and detect different scales of emotion within text.
+- Node.js
+- Express
+- React
+- Redux
 
-### `npm test`
+# Concept and Algorithm logic
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After careful consideration of the best practices and principles of trustworthy journalism, I came up with a few solutions for a MVP - Minimal Viable Product to not only calculate *sentiment* but other variables that could indicate a weak narrative or, even worse, an inauthentic article, also known as the "fake news phenomenon". 
+          
 
-### `npm run build`
+# Usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Copy and paste article's plain text into the input field on main page and click on "check":
+        
+      LINK TO HOMEPAGE  https://fervent-carson-5438ca.netlify.com/
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. After the backend calculations are done you'll be redirected to the score page where the following information will be rendered:
 
-### `npm run eject`
+        // PRINTSCREEN SCORE PAGE
+        
+# Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Backend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - one must have a Google API Key saved on a json file in the root directory to set an environment variable as below
+    - $ export google_application_credentials="/home/user/directory/file_name.json"
+    - $ node index.js
+    
+2. Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    - $ npm run install
+    - $ npm run start
