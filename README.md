@@ -36,6 +36,7 @@ After careful consideration of the best practices and principles of trustworthy 
 
     - one must have a Google API Key saved on a json file in the root directory to set an environment variable as below
     - $ export google_application_credentials="/home/user/directory/file_name.json"
+    - $ docker start <your_image>
     - $ node index.js
     
 2. Frontend
