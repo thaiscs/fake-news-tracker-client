@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import MdBulb from "react-ionicons/lib/MdBulb";
+import MdHome from "react-ionicons/lib/MdHome";
+import { Link } from "react-router-dom";
 
 class ScorePage extends Component {
   render() {
@@ -19,18 +21,13 @@ class ScorePage extends Component {
             className="score-page-background"
             style={{ backgroundColor: "black" }}
           >
-            {/* <img
-              className="idea-icon"
-              src="https://cdn.dribbble.com/users/42577/screenshots/1470973/lightbulb.gif"
-              width="370"
-              height="122"
-              style={{
-                float: "left",
-                transform: "rotateZ(-25deg)",
-                paddingTop: "55px"
-              }}
-              alt="idea-icon"
-            /> */}
+            <Link to="/">
+              <MdHome
+                style={{ float: "left", padding: "10px 10px 10px 10px" }}
+                fontSize="60px"
+                color="white"
+              />
+            </Link>
             <h1
               className="bullshit-score-gradient"
               style={{
@@ -60,10 +57,6 @@ class ScorePage extends Component {
             <h3 style={{ color: "ghostwhite", fontStyle: "italic" }}>
               {score.article.emotion}
             </h3>
-            {/* <span className="hand-emoji" role="img" aria-label="hand">
-              👉
-            </span> */}
-
             <MdBulb shake={true} fontSize="60px" color="orange" />
             <h4 style={{ color: "#FF8C00" }}>{score.article.tipTitle}</h4>
             <h4 style={{ color: "#FF8C00" }}>{score.article.tipContent}</h4>

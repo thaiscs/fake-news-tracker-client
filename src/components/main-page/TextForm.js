@@ -56,7 +56,6 @@ class TextForm extends Component {
         },
         MuiOutlinedInput: {
           multiline: {
-            // padding: "18.5px 250px",
             borderRadius: "10px"
           }
         }

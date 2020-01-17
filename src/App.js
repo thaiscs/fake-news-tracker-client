@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import TextForm from "./components/articles/TextForm";
+import TextForm from "./components/main-page/TextForm";
 import { Route } from "react-router-dom";
-import ScorePage from "./components/score/ScorePage";
+import ScorePage from "./components/score-page/ScorePage";
 
 function App() {
   return (

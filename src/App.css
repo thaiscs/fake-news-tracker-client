@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   display: block;
+  height: auto;
 }
 
 .main-page {
@@ -22,7 +23,8 @@
 }
 
 .score-page-background {
-  height: auto;
+  height: calc(100vh - 5px);
+
   background-size: 100%;
   padding-bottom: 5px;
   background-size: contain;
