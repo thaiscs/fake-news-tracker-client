@@ -1,5 +1,5 @@
 import request from "superagent";
-const url = "https://sleepy-lowlands-92044.herokuapp.com";
+const url = "http://localhost:4000";
 
 export function checkNewArticle(article) {
   return {
