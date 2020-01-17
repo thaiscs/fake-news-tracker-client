@@ -28,15 +28,7 @@ class ScorePage extends Component {
                 color="white"
               />
             </Link>
-            <h1
-              className="bullshit-score-gradient"
-              style={{
-                paddingTop: "70px"
-              }}
-            >
-              {" "}
-              Bullshit Score{" "}
-            </h1>
+            <h1 className="bullshit-score-gradient"> Bullshit Score </h1>
             <h1
               style={{
                 color: "white",

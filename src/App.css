@@ -34,7 +34,6 @@
 }
 
 .bullshit-score-gradient {
-  /* padding-top: 30px; */
   font-size: 72px;
   background: linear-gradient(to right, green, yellow, red, gray);
   -webkit-background-clip: text;
@@ -52,6 +51,10 @@
 
 h1 {
   display: inline-flex;
+}
+
+h4 {
+  margin: 0;
 }
 @keyframes score-page-image {
   from {
