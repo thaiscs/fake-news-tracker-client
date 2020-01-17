@@ -43,11 +43,11 @@ class TextForm extends Component {
             flexDirection: "column",
             marginTop: "8px",
             alignItems: "center"
-          },
-          transitions: {
-            // So we have `transition: none;` everywhere
-            create: () => "none"
           }
+          // transitions: {
+          //   // So we have `transition: none;` everywhere
+          //   create: () => "none"
+          // }
         },
         MuiInputBase: {
           root: {
