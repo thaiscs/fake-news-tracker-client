@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import newArticleReducer from "./components/main-page/reducer";
+import newArticleReducer from "../src/components/actions/reducer";
 
 export default combineReducers({
   score: newArticleReducer

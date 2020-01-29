@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { submitNewArticle } from "./actions";
+import { submitNewArticle } from "../actions/actions";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
@@ -28,7 +28,6 @@ class TextForm extends Component {
     const theme = createMuiTheme({
       overrides: {
         MuiCssBaseline: {
-          // Name of the rule
           "@global": {
             "*, *::before, *::after": {
               transition: "none !important",
@@ -44,10 +43,6 @@ class TextForm extends Component {
             marginTop: "8px",
             alignItems: "center"
           }
-          // transitions: {
-          //   // So we have `transition: none;` everywhere
-          //   create: () => "none"
-          // }
         },
         MuiInputBase: {
           root: {
