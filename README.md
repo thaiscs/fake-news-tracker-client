@@ -17,7 +17,7 @@ In a world where information is such a valuable asset, I invite the user to re-e
 # Concept and Algorithm logic
 
 After careful consideration of the best practices and principles of trustworthy journalism, I came up with a few solutions for a MVP - Minimal Viable Product to not only calculate *sentiment* but other variables that could indicate a weak narrative or, even worse, an inauthentic article, also known as the "fake news phenomenon". 
-          
+
 
 # Usage
 
@@ -26,13 +26,9 @@ After careful consideration of the best practices and principles of trustworthy 
       LINK TO HOMEPAGE  https://fervent-carson-5438ca.netlify.com/
 
 
-2. After the backend calculations are done you'll be redirected to the score page where the following information will be rendered:
-
-        // PRINTSCREEN SCORE PAGE
-        
 # Installation
 
-1. Backend
+1. [Backend](https://github.com/thaiscs/fake-news-tracker-server)
 
     - one must have a Google API Key saved on a json file in the root directory to set an environment variable as below
     - $ export google_application_credentials="/home/user/directory/file_name.json"
